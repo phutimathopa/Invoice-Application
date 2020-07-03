@@ -5,7 +5,6 @@
       dense
       dark
     >
-    
       <v-toolbar-title>INVOICE</v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -27,19 +26,14 @@
             <v-icon>mdi-dots-vertical</v-icon>
           </v-btn>
         </template>
-
-        <v-list>
-          <v-list-item
-            
-            :key="n"
-            @click="() => {}"
-          >
-            <v-list-item-title>User {{ n }}</v-list-item-title>
-          </v-list-item>
-        </v-list>
       </v-menu>
     </v-app-bar>
-   
+        <v-card
+            class="mx-auto"
+            width="400px"
+            >
+            <h1>MosNak Engineering</h1>
+    </v-card>
      <invoiceSelector/>
   </div>
 
@@ -57,5 +51,10 @@ components:{
 </script>
 
 <style>
+  h1 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #4CAF50;
+  }
 
 </style>
